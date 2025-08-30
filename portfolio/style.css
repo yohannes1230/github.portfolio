@@ -1,0 +1,153 @@
+/* General Body Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light grey text */
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header and Name Animation */
+header {
+    background: #1a1a1a;
+    padding: 60px 20px;
+    text-align: center;
+    border-bottom: 3px solid #00BFFF; /* Deep sky blue accent */
+}
+
+.name-animated {
+    font-size: 3.5em;
+    font-weight: 700;
+    background: linear-gradient(90deg, #ff8a00, #e52e71, #4c00ff, #00bfff);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-animation 10s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+header h2 {
+    font-weight: 300;
+    color: #cccccc;
+}
+
+/* Section Styling */
+section {
+    padding: 50px 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #ffffff;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0));
+}
+
+
+/* Skills Section - Bright White Theme */
+#skills {
+    background-color: #1e1e1e;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    text-align: center;
+}
+
+.skill-item {
+    background-color: #ffffff; /* Bright white background */
+    color: #121212; /* Dark text */
+    padding: 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 191, 255, 0.3); /* Glow effect on hover */
+}
+
+
+/* Projects Section - Bright White Theme */
+#projects {
+    background-color: #1a1a1a;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background-color: #ffffff; /* Bright white card */
+    color: #2c2c2c; /* Dark text for readability */
+    border-left: 5px solid #00BFFF; /* Accent color */
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.03);
+}
+
+.project-card h3 {
+    margin-top: 0;
+    color: #005f7e;
+}
+
+.project-tags {
+    margin-top: 15px;
+}
+
+.project-tags span {
+    display: inline-block;
+    background-color: #e0f7fa; /* Light cyan background for tags */
+    color: #00796b; /* Teal text color */
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.8em;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000000;
+}
+
+footer a {
+    color: #00BFFF;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
